@@ -1,0 +1,30 @@
+# Robots.txt para MarcaDeAgua Online
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+Disallow: /.env
+
+# Permitir rastreo de archivos estáticos
+Allow: /public/
+Allow: /logo/
+
+# Sitemaps
+Sitemap: https://devcraftpablo.online/sitemap.xml
+
+# Crawl delay (en segundos)
+Crawl-delay: 0.5
+
+# Request rate
+Request-rate: 30/1m
+
+# User-agent específico para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# User-agent para Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
